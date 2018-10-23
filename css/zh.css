@@ -91,7 +91,7 @@ a, a > code {
 
 
 .title-slide {
-   background-image: url(https://github.com/tlorusso/xaringanstat/raw/master/img/lionwhite.jpg);
+   background-image: url(https://www.web.statistik.zh.ch/xaringanstat/img/lionwhite.jpg);
   /*background-position: top right;*/
   background-size: 100%;
   /*background-color: white;
@@ -103,27 +103,10 @@ a, a > code {
     
 }
 
-/* text padding anpassen */
-.title-slide h1 {
-  font-family: 'Arial Black','Helvetica';
-  color: #fff;  
-  text-shadow: none;
-  line-height: 2em;
-  text-align: left;
-  top: -10px;
-  margin-top: -233px !important;
-  margin-left: 50px;
- /* margin-top: 100px; */
- /* padding-top: 2.5em;*/
-}
-
-
-
-
 
 .title-slide.remark-slide-content:before {
-    content: 'HALLOOOOOOO';
-    font-size: 14px;
+    content: 'Statistisches Amt Kanton Zürich';
+    font-size: 16px;
     font-family:'Arial Black', 'Yanone Kaffeesatz';
     width: 200px;
     margin-top:23px;
@@ -134,6 +117,17 @@ a, a > code {
     text-align: left;
 	line-height: 100%;
     
+}
+
+.title-slide h1 {
+  font-family: 'Arial Black','Helvetica';
+  color: #fff;  
+  text-shadow: none;
+  line-height: 2em;
+  text-align: left;
+  margin-left: 50px;
+ /* margin-top: 100px; */
+ /* padding-top: 2.5em;*/
 }
 
 
@@ -155,6 +149,7 @@ a, a > code {
   text-shadow: none;
   line-height: 1em;
   text-align: left;
+   margin-left: 50px;
 }
 
 .title-slide h3:nth-of-type(1), .title-slide h3:nth-of-type(2) {
@@ -164,6 +159,7 @@ a, a > code {
   text-align: left;
   font-family: 'Arial Black','Helvetica';
   font-size: 24px;
+   margin-left: 50px;
 	
 }
 
