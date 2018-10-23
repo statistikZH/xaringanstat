@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1540311982811.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "100B1540",
+    "lastKnownWriteTime" : 1540312417,
+    "last_content_update" : 1540312417265,
+    "path" : "C:/gitrepos/xaringanstat/xaringanstat/hello.R",
+    "project_path" : "hello.R",
+    "properties" : {
+        "cursorPosition" : "8,1",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
