@@ -4,4 +4,4 @@ A package containing templates for [xaringan](https://github.com/yihui/xaringan)
 
 `devtools::install_github("tlorusso/xaringanstat")`
 
-After installing the package the templates are available in  the R Studio menu `File -> New File -> R Markdown -> From Template -> Ninja Presentation`
+After installing the package the templates are available in  the R Studio menu `File -> New File -> R Markdown -> From Template -> Stat ZH Template for xaringan`
