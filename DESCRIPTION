@@ -2,10 +2,11 @@ Package: xaringanstat
 Type: Package
 Title:  Templates for xaringan-presentations based on the corporate design of the canton Zurich.
 Version: 0.1.0
-Authors@R: person("Thomas", "Lo Russo", email = "thomas.lorusso@statistik.ji.zh.ch",role = c("aut", "cre"),
-		   person("Andrea", "Schnell", email = "andrea.schnell@statistik.ji.zh.ch",role = c("aut"))
+Authors@R: c(person("Andrea", "Schnell",role = "aut"),
+			 person("Thomas","Lo Russo",role = c("aut", "cre"),
+			 email= "thomas.lorusso@statistik.ji.zh.ch"))
 Description: The package contains templates for xaringan-presentations conforming to the cantonal CD-guidelines. Xaringan is an R package which allows to generate slideshows powered by remark.js. 
-			After installing the package the templates are available in  the R Studio menu (File -> New File -> R Markdown -> From Template -> Ninja Presentation).
+			After installing the package the templates are available in  the R Studio menu (File -> New File -> R Markdown -> From Template -> Ninja Presentation))
 Depends: xaringan
 License: MIT
 Encoding: UTF-8

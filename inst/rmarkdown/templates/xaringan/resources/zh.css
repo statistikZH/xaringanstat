@@ -91,7 +91,7 @@ a, a > code {
 
 
 .title-slide {
-   background-image: url(https://www.web.statistik.zh.ch/xaringanstat/img/lionwhite.jpg);
+   background-image: url(lionwhite.jpg);
   /*background-position: top right;*/
   background-size: 100%;
   /*background-color: white;
@@ -105,7 +105,7 @@ a, a > code {
 
 
 .title-slide.remark-slide-content:before {
-    content: 'Statistisches Amt Kanton Zürich';
+    content: 'Kanton Zürich Statistisches Amt';
     font-size: 16px;
     font-family:'Arial Black', 'Yanone Kaffeesatz';
     width: 200px;
