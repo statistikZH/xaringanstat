@@ -195,6 +195,24 @@ hr {
   display: none;
 }
 
+
+/* title slide : formattierung der github / twitter / email angaben */
+.contact{
+   text-align: left;
+   margin-left: 70px;
+} 
+
+.contact a{
+  color: white;
+  text-decoration: none; 
+  border-bottom: 5px solid #009ee0; 
+  color: white;"
+}
+
+.contact a:hover {
+  color: orange;
+}
+
 /* Two-column layout */
 .left-column {
   color: #777;

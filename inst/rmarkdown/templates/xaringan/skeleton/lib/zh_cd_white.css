@@ -174,7 +174,6 @@ hr {
   padding-top: 2.5em;
 }
 
-
 /*
 .title-slide h1:before {
     content: 'Kanton Zürich Statistisches Amt \a ';
@@ -210,6 +209,25 @@ hr {
 .title-slide .remark-slide-number {
   display: none;
 }
+
+/*formatierung der links auf der titelseite*/
+.contact{
+   text-align: left;
+   margin-left: 70px;
+} 
+
+.contact a{
+  color: black;
+  text-decoration: none; 
+  border-bottom: 5px solid #009ee0; 
+  color: white;"
+}
+
+.contact a:hover {
+  color: orange;
+}
+
+
 
 /* Two-column layout */
 .left-column {

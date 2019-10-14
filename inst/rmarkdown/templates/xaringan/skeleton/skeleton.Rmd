@@ -3,9 +3,11 @@ title: "Titel"
 subtitle: "Untertitel"
 author: 'Thomas Muster <br> Institut '
 date: '01.01.2022 <br><br>
-<a href="https://twitter.com/statistik_zh" style="text-decoration: none; border-bottom: 5px solid  #009ee0; color: white;"><i class="fa fa-twitter fa-fw"></i>@statistik_zh</a><br> 
-<a href="https://github.com/statistikZH" style="text-decoration: none; border-bottom: 5px solid  #009ee0; color: white;"><i class="fa fa-github fa-fw"></i>Statistisches Amt Kanton Zürich</a><br> 
-<a href="mailto:datashop@statistik.zh.ch" style="text-decoration: none; border-bottom: 5px solid  #009ee0; color: white;"><i class="fa fa-paper-plane fa-fw"></i>datashop@statistik.zh.ch</a><br>'
+<div class="contact">
+<a href="https://twitter.com/statistik_zh" style="text-decoration: none; border-bottom:"><i class="fa fa-twitter fa-fw"></i>@statistik_zh</a><br> 
+<a href="https://github.com/statistikZH"><i class="fa fa-github fa-fw"></i>Statistisches Amt Kanton Zürich</a><br> 
+<a href="mailto:datashop@statistik.zh.ch"><i class="fa fa-paper-plane fa-fw"></i>datashop@statistik.zh.ch</a><br>
+</div>'
 output:
   xaringan::moon_reader:
     css: 
