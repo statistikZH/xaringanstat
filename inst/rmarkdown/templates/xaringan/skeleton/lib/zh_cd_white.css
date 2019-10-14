@@ -37,11 +37,27 @@ bullets {font-family: 'helvetica','Lucida Console';
     color: black;
 }
 
+ul {
+  list-style-type: none;
+}
+
+ul > li:before {
+  content: "–"; /* en dash */
+  position: absolute;
+  margin-left: -1.1em; 
+}
+
 
 a, a > code {
   color: #009ee0;
   text-decoration: none;
   font-size: 15pt;
+}
+
+code { /* changes inline code highlighting */
+  background: #F5F5F5;
+  border-radius: 3px;
+  padding: 4px;
 }
 
 
@@ -51,7 +67,7 @@ hr {
   margin-right: auto;
   height: 8px;
   border: 0;
-  box-shadow: 0 8px 6px -8px black inset;
+  box-shadow: 0 8px 6px -10px #8c8c8c inset;
 }
 
 .remark-slide-content { 
@@ -87,7 +103,7 @@ hr {
 
 
 .inverse {
-  background-color: #009ee0;
+  background-color: #272822;
   color: white;
   /*text-shadow: 0 0 10px #333;*/
   text-decoration: none;
@@ -96,6 +112,13 @@ hr {
 .inverse h1, .inverse h2, .inverse h3 {
   color: white;
   line-height: 1.0em;
+}
+
+.remark-inline-code{
+  background: #F5F5F5; /* lighter */
+  /* background: #e7e8e2; /* darker */
+  border-radius: 3px;
+  padding: 4px;
 }
 
 .inverse code {
@@ -112,15 +135,8 @@ hr {
   box-shadow: 0 8px 10px -4px white inset;
 }
 
-.remark-inline-code{
-  background: #F5F5F5; /* lighter */
-  /* background: #e7e8e2; /* darker */
-  border-radius: 3px;
-  padding: 4px;
-}
-
 .title-slide {
-   background-image: url(lionwhite.jpg);
+   background-image: url(Hintergrundbild.jpg);
   /*background-position: top right;*/
   background-size: 100%;
   /*background-color: white;
@@ -128,32 +144,32 @@ hr {
   background-size:cover;
   background-position: left; 
   top:-5px;
-  /*opacity: 0.4;*/
-    
+  /*opacity: 0.4;*/  
 }
 
 .title-slide.remark-slide-content:before {
     content: 'Kanton Zürich Statistisches Amt';
     font-size: 16px;
     font-family: 'Arial Black','Helvetica';
-    width: 150px;
+    width: 200px;
     margin-top:23px;
+    margin-left: 30px;
     display: inline-block;
     position: absolute;
     top: 0px;
     left: 110px;
     text-align: left;
-	line-height: 100%;
-    
+    line-height: 100%;
+    color: #919191;    
 }
 
 .title-slide h1 {
   font-family: 'Arial Black','Helvetica';
-  color: white;  
+  color: #009ee0;  
   text-shadow: none;
-  line-height: 1.5em;
+  line-height: 1em;
   text-align: left;
-  margin-left: 50px;
+  margin-left: 70px;
   margin-top: 100px; 
   padding-top: 2.5em;
 }
@@ -173,21 +189,21 @@ hr {
 
 .title-slide h2 {
   font-family:'Arial Black','Helvetica';
-  color: white; 
+  color: #919191; 
   text-shadow: none;
-  line-height: 1em;
+  line-height: 0em;
   text-align: left;
-   margin-left: 50px;
+  margin-left: 70px;
 }
 
 .title-slide h3:nth-of-type(1), .title-slide h3:nth-of-type(2) {
-  color: white; 
+  color: black; 
   text-shadow: none;
   line-height: 1.1em;
   text-align: left;
   font-family: 'Arial Black','Helvetica';
   font-size: 24px;
-  margin-left: 50px;
+  margin-left: 70px;
 	
 }
 

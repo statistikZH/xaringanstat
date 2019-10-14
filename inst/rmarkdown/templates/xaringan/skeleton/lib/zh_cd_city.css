@@ -44,6 +44,16 @@ a, a > code {
   font-size: 15pt;
 }
 
+
+hr {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 8px;
+  border: 0;
+  box-shadow: 0 8px 6px -8px black inset;
+}
+
 .remark-slide-content { 
   padding: 50px;
   line-height: 1.25em;
@@ -88,6 +98,20 @@ a, a > code {
   line-height: 1.0em;
 }
 
+.inverse code {
+  background: #FF7F50;
+  border-radius: 3px;
+}
+
+.inverse hr {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 5px;
+  border: 0;
+  box-shadow: 0 8px 10px -4px white inset;
+}
+
 .remark-inline-code{
   background: #F5F5F5; /* lighter */
   /* background: #e7e8e2; /* darker */
@@ -96,7 +120,7 @@ a, a > code {
 }
 
 .title-slide {
-   background-image: url(Hintergrundbild3.jpg);
+   background-image: url(lionwhite.jpg);
   /*background-position: top right;*/
   background-size: 100%;
   /*background-color: white;
@@ -112,7 +136,7 @@ a, a > code {
     content: 'Kanton Zürich Statistisches Amt';
     font-size: 16px;
     font-family: 'Arial Black','Helvetica';
-    width: 150px;
+    width: 200px;
     margin-top:23px;
     display: inline-block;
     position: absolute;
@@ -127,11 +151,11 @@ a, a > code {
   font-family: 'Arial Black','Helvetica';
   color: white;  
   text-shadow: none;
-  line-height: 2em;
+  line-height: 1.5em;
   text-align: left;
   margin-left: 50px;
- /* margin-top: 100px; */
- /* padding-top: 2.5em;*/
+  margin-top: 100px; 
+  padding-top: 2.5em;
 }
 
 
@@ -163,7 +187,7 @@ a, a > code {
   text-align: left;
   font-family: 'Arial Black','Helvetica';
   font-size: 24px;
-   margin-left: 50px;
+  margin-left: 50px;
 	
 }
 
