@@ -202,7 +202,7 @@ hr {
   text-align: left;
   font-family: 'Arial Black','Helvetica';
   font-size: 24px;
-  margin-left: 70px;
+  margin-left: 50px;
 	
 }
 
@@ -220,7 +220,6 @@ hr {
   color: black;
   text-decoration: none; 
   border-bottom: 5px solid #009ee0; 
-  color: white;"
 }
 
 .contact a:hover {
