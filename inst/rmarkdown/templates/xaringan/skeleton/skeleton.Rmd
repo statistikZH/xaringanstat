@@ -12,6 +12,7 @@ output:
   xaringan::moon_reader:
     css: 
     - lib/zh_cd_city.css
+    - lib/hygge.css
     - "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
     - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     nature:
@@ -19,6 +20,19 @@ output:
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
+      ## Mit Option "slideNumberFormat" ENTWEDER Foliennummerieung ODER ProgressBar einfügen ##
+      # (Raute wie gewünscht setzten od. entfernen)
+      # Bsp. Foliennummerierung:
+      # slideNumberFormat: "%current%"                   # 12
+      # slideNumberFormat: "%current%/%total%"           # 12/42
+      # Bsp. PogressBar: 
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+      # Countdown einfügen
+      #countdown: 60000  # Countdown 1 min pro Slide
 ---
 
 # Layout 1
@@ -123,7 +137,7 @@ Mit der Anweisung `class: center, middle` werden alle Elemente der Folien _zentr
 Das Attribut `class` lässt weitere Positionierungsmöglichkeiten zu. Folgende Angaben sind möglich:
 
 Horizontal: `left, center, right` </br>
-Vertikal: `top, middle, botton`
+Vertikal: `top, middle, bottom`
 
 ---
 background-image: url(lib/Hintergrundbild2.jpg)
@@ -191,29 +205,125 @@ https://www.pzhao.org/slides/xaringan-showcase/xaringan-animate/#5
 
 ---
 
-# Texthintergrund farblich markieren
+# Texthintergrund farblich markieren I
 ***
 
 Möglich mit `<div style="background-color:#FFFFE0">Text</div>`
 
-</br>
 
 Hier ein paar Beispiele:
 
-<div style="background-color:#DC143C">Text</div>
+<div style="background-color:#DC143C">Texthintergrund rot</div>
 
-<div style="background-color:#FF4500">Text</div>
+<div style="background-color:#FF4500">Texthintergrund orange</div>
 
-<div style="background-color:#FFFF00">.center[Text]</div>
+<div style="background-color:#FFFF00">.center[Texthintergrund gelb]</div>
 
-<div style="background-color:#228B22">.right[Text]</div>
+<div style="background-color:#228B22">.right[Texthintergrund grün]</div>
 
-<div style="background-color:#00BFFF">Text</div>
+<div style="background-color:#00BFFF">Texthintergrund blau</div>
 
-</br>
-Weitere Farben: </br>
+Weitere Farben: 
 https://www.w3schools.com/cssref/css_colors.asp
 
+---
+
+# Texthintergrund farblich markieren II
+***
+
+Weitere Möglichkeiten:
+
+
+`.content-box-blue[Texthintergrund blau]` 
+
+.content-box-blue[Texthintergrund blau] 
+
+</br>
+`.full-width[.content-box-red[Texthintergrund rot]]`
+.full-width[.content-box-red[Texthintergrund rot]] 
+.footnotesize[`.pull-left[.full-width[.content-box-yellow[Texthintergrund gelb, Box links]]]`] </br>
+.footnotesize[`.pull-right[.full-width[.content-box-yellow[**Texthintergrund gelb, Box rechts, Text fett**]]]`]
+.pull-left[.full-width[.content-box-yellow[Texthintergrund gelb, Box links]]]
+.pull-right[.full-width[.content-box-yellow[**Texthintergrund gelb, Box rechts, Text fett.**]]]
+
+---
+
+# Texthintergrund farblich markieren III
+***
+
+.pull-left[
+**Syntax**
+
+`.full-width[.content-box-gray[Texthintergrund grau]]`
+
+`.full-width[.content-box-grey[Texthintergrund hellgrau]]`
+
+`.full-width[.content-box-orange[Texthintergrund orange]]`
+
+`.full-width[.content-box-green[Texthintergrund grün]]`
+
+`.full-width[.content-box-purple[ Texthintergrund lila]]`
+
+]
+
+.pull-right[
+**Ergebnis**
+
+.full-width[.content-box-gray[Texthintergrund grau]] 
+.full-width[.content-box-grey[Texthintergrund hellgrau]]
+.full-width[.content-box-orange[Texthintergrund orange]]
+.full-width[.content-box-green[Texthintergrund grün]]
+.full-width[.content-box-purple[ Texthintergrund lila]] 
+
+]
+
+---
+
+# Textfarben
+***
+
+
+.pull-left[
+**Syntax**
+
+`.black[Textfarbe schwarz]`
+
+`.gray[Textfarbe grau]`
+
+`.blue[Textfarbe blau]`
+
+`.green[Textfarbe grün]`
+
+`.purple[Textfarbe lila]`
+
+`.red[Textfarbe rot]`
+
+`.orange[Textfarbe orange]`
+
+`.yellow[Textfarbe gelb]`
+
+]
+
+.pull-right[
+**Ergebnis**
+
+.black[Textfarbe schwarz]
+
+.gray[Textfarbe grau]
+
+.blue[Textfarbe blau]
+
+.green[Textfarbe grün]
+
+.purple[Textfarbe lila]
+
+.red[Textfarbe rot]
+
+.orange[Textfarbe orange]
+
+.yellow[Textfarbe gelb]
+
+]
 ---
 
 # Überschriften
@@ -304,7 +414,7 @@ https://www.w3schools.com/cssref/css_colors.asp
 
 ---
 
-# Text formatieren
+# Text formatieren I
 ***
 
 
@@ -330,7 +440,7 @@ https://www.w3schools.com/cssref/css_colors.asp
 .pull-right[
 **Ergebnis**
 
-__Text fett__
+__Text fett__ 
 
 **Text fett**
 
@@ -338,7 +448,7 @@ _Text kursiv_
 
 *Text kursiv*
 
-~~Text durchstreichen~~
+~~Text durchgestrichen~~
 
 Text<sub>tiefgestellt</sub>
 
@@ -355,44 +465,37 @@ Text<sup>hochgestellt</sup>
 .pull-left[
 **Syntax**
 
-`.smaller[Klein.] `
-
-`.smallest[Kleiner.]`
-
-`.small[Am kleinsten.]`
-
-`Normal`
-
-`.largest[Gross.] `
-
-`.larger[Grösser.] `
-
-`.large[Am grössten.]`
+`.smaller[Klein]`
+`.smaller[Klein]/.smallest[Klein]`
+`.small[Kleiner]`
+`.footnotesize[Kleiner]`</br>
+`.scriptsize[scriptsize]`</br>
+`.tiny[Am kleinsten]`</br>
+`Normal` 
+`.largest[Gross]/.larger[Gross]`</br>
+`.large[Grösser]`</br>
+`.Large[Am grössten]`</br>
 
 ]
 
 .pull-right[
 **Ergebnis**
 
-.smaller[Klein.] 
-
-.smallest[Kleiner.]  
-
-.small[Am kleinsten.] 
-
-Normal  
-
-.largest[Gross.] 
-
-.larger[Grösser.]   
-
-.large[Am grössten.] 
+.smaller[Klein]/.smallest[Klein] </br>
+.small[Kleiner] </br>
+.footnotesize[Kleiner] </br>
+.scriptsize[scriptsize] </br>
+.tiny[Am kleinsten] </br>
+Normal   
+.largest[Gross]/.larger[Gross] </br>
+.large[Grösser] </br>
+.Large[Am grössten] </br>
 
 ]
 
 ---
 
-# Auch schön
+# Auch schön zu wissen
 ***
 
 
@@ -405,16 +508,26 @@ Normal
 
 ` `Eine andere Schriftart.` `
 
+`.bolder[Text fett]`
+
+`.bold[Text fetter]` 
+
 ]
 
 .pull-right[
-**Beispiel**
+**Ergebnis**
 
 Ein [Link](https://statistik.zh.ch/internet/justiz_inneres/statistik/de/home.html).
 
 > Ein Zitat.
 
 `Eine andere Schriftart.`
+
+.bolder[Text fett]
+
+.bold[Text fetter] 
+
+
 
 </div>
 ]
@@ -508,19 +621,108 @@ ggplot(mtcars) +
 
 ---
 
-# Bild einfügen
+# Bilder einfügen I
 ***
 
-Bilder lassen sich mit `![](L:/STAT/.../bild.png)` einfügen. Einfach den Dateipfand oder den Link zum Bild an entsprechender Stelle einfügen.
+Um Bilder einzufügen, bestehen beispielsweise die folgenden beiden Möglichkeiten:
+
+`![](L:/STAT/.../bild.png)`  
+
+```{r eval=F, tidy=FALSE, out.width="80%"}
+knitr::include_graphics("HierInternetlinkoderDateipfadeinfügen.jpg")
+```
 
 .center[![Bild](https://raw.githubusercontent.com/libgit2/libgit2sharp/master/square-logo.png)]
 
+Die letzte hier angegebene Funktion erlaubt etwa die folgenden Outputs: 
+
 ---
 
-# Theme
+# Bilder einfügen II
 ***
 
-Um ein anderes Theme zu wählen, kannst du im Header nach `css` den Dateinamen deiner gewünschten CSS-Datei einsetzen. In etwa so:
+.pull-left[
+Original:
+
+```{r echo=FALSE, out.width="50%"}
+knitr::include_graphics("https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg")
+```
+
+Mit `.polaroid`:
+
+.polaroid[
+```{r echo=FALSE, out.width="50%"}
+knitr::include_graphics("https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg")
+```
+]
+]
+
+.pull-right[
+
+Mit `.rotate-right`:
+
+.rotate-right[
+```{r echo=FALSE, out.width="50%"}
+knitr::include_graphics("https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg")
+```
+]
+
+Mit `.blur`
+
+.blur[
+```{r echo=FALSE, out.width="50%"}
+knitr::include_graphics("https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg")
+```
+] 
+]
+
+---
+
+# Bilder einfügen III
+***
+
+.pull-left[
+Mit `.opacity`
+
+.opacity[
+```{r echo=FALSE, out.width="50%"}
+knitr::include_graphics("https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg")
+```
+]
+
+Mit `.blur` und `.opacity`
+
+.blur[.opacity[
+```{r echo=FALSE, out.width="50%"}
+knitr::include_graphics("https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg")
+```
+]]
+]
+.pull-right[
+
+Mit `.rotate-left` und `.grayscale`:
+
+.rotate-left[
+.grayscale[
+```{r echo=FALSE, out.width="50%"}
+knitr::include_graphics("https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg")
+```
+]]
+
+Mit `.shadow`:
+
+.shadow[
+```{r echo=FALSE, out.width="50%"}
+knitr::include_graphics("https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg")
+```
+] 
+]
+---
+
+# Themes I
+***
+
+Um ein anderes Theme zu wählen, kann im Header nach `css` der Dateiname einer gewünschten CSS-Datei eingesetzt werden. In etwa so:
 
 ```yaml
 output:
@@ -532,6 +734,20 @@ output:
 ```
 
 Der letzte hier angegebene Link ermöglicht übrigens das Einfügen von Icons, zum Beispiel einen Twitter-Icon.
+
+---
+
+# Themes II
+***
+
+In dieser Package sind die CSS-Dateien `zh_cd_city.css` und `zh_cd_white.css` enthalten, mit dem Unterschied, dass jeweils eine andere Titelfolie verwendet wird.
+
+Ein paar weitere Themes sind zum Beispiel hier zu finden: </br>
+https://github.com/yihui/xaringan/wiki/Themes 
+
+Einige lassen sich auch mit dem Befehl `names(xaringan:::list_css())` anzeigen.
+
+Mit dem Befehl `?xaringan::moon_reader` kann ein nützliches Hilfedokument abgerufen werden.
 
 ---
 
@@ -556,14 +772,44 @@ background-size: cover
 ```
 
 ---
+
+# Importieren von Microsoft Powerpoint
+***
+
+Siehe hier: </br>
+https://github.com/yihui/xaringan/wiki/Importing-from-Microsoft-PowerPoint
+
+---
+
+# Exportieren als PDF
+***
+
+Siehe hier: </br>
+https://github.com/yihui/xaringan/wiki/Export-Slides-to-PDF
+
+
+---
 background-image: url(lib/Hintergrundbild2.jpg)
 class: center, middle, inverse
 
-# Danke fürs Durchhalten!
+
+# Feedback? Immer gerne!
 ***
-.center[<div style="
+.center[
+<div style="
 font-size:120px;
 margin: 90px;
 ">
-&#128540;
-</div>]
+&#128519;
+</div>
+]
+
+<div  style="
+position: absolute;
+bottom: 30px;
+left: 390px;
+margin-top: 50px;
+">
+<font face="Brush Script MT" size="5">Presentation created "with .content-box-yellow[[xaringan](https://github.com/yihui/xaringan)] and a twist of .content-box-yellow[[hygge](https://github.com/yihui/xaringan/blob/master/inst/examples/ghoul.Rmd)]"</font>
+</div> 
+

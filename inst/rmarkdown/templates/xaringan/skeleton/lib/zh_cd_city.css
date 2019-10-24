@@ -37,7 +37,6 @@ bullets {font-family: 'helvetica','Lucida Console';
     color: black;
 }
 
-
 a, a > code {
   color: #009ee0;
   text-decoration: none;
@@ -67,14 +66,38 @@ hr {
 
 .remark-slide-content > h1:first-of-type {
     margin-top: 0px;
-
 }
 
+/*
 .remark-slide-number {
-    font-size: 10pt;
+  font-size: 10pt;
   color: #009ee0; 
-  opacity: 0;  } 
+  opacity: 0;  
+  } 
+*/
 
+.remark-slide-number {
+  font-size: 10pt;
+  margin-bottom: -11.6px;
+  margin-right: 10px;
+  color: #000000; /* black */
+  opacity: 1; 
+  position: fixed
+}
+
+.remark-slide-number .progress-bar-container {
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+  position: fixed
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #009ee0;
+}
 
 .footnote {
   position: absolute;
@@ -82,8 +105,10 @@ hr {
   padding-right: 4em;
   font-size: 90%;
 }
+
 .remark-code, .remark-inline-code { font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; }
-.remark-code-line-highlighted     { background-color: #F9E58E; }
+
+.remark-code-line-highlighted { background-color: #F9E58E; }
 
 
 .inverse {
@@ -110,6 +135,15 @@ hr {
   height: 5px;
   border: 0;
   box-shadow: 0 8px 10px -4px white inset;
+}
+
+.inverse remark-slide-number {
+  color: white; 
+}
+
+.inverse progress-bar {
+  height: 100%;
+  background-color: white;
 }
 
 .remark-inline-code{
@@ -188,7 +222,6 @@ hr {
   font-family: 'Arial Black','Helvetica';
   font-size: 24px;
   margin-left: 50px;
-	
 }
 
 .title-slide .remark-slide-number {
@@ -207,6 +240,7 @@ hr {
   text-decoration: none; 
   border-bottom: 5px solid #009ee0; 
   color: white;
+  margin-left: -20px;
 }
 
 .contact a:hover {

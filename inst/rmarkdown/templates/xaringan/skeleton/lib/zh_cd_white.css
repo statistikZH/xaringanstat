@@ -86,10 +86,36 @@ hr {
 
 }
 
+/*
 .remark-slide-number {
-    font-size: 10pt;
+  font-size: 10pt;
   color: #009ee0; 
-  opacity: 0;  } 
+  opacity: 0;  
+  } 
+*/ 
+  
+ .remark-slide-number {
+  font-size: 10pt;
+  margin-bottom: -11.6px;
+  margin-right: 10px;
+  color: #000000; /* black */
+  opacity: 1; 
+  position: fixed
+}
+
+.remark-slide-number .progress-bar-container {
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+  position: fixed
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #009ee0;
+}
 
 
 .footnote {
@@ -114,13 +140,6 @@ hr {
   line-height: 1.0em;
 }
 
-.remark-inline-code{
-  background: #F5F5F5; /* lighter */
-  /* background: #e7e8e2; /* darker */
-  border-radius: 3px;
-  padding: 4px;
-}
-
 .inverse code {
   background: #FF7F50;
   border-radius: 3px;
@@ -133,6 +152,22 @@ hr {
   height: 5px;
   border: 0;
   box-shadow: 0 8px 10px -4px white inset;
+}
+
+.inverse remark-slide-number {
+  color: white; 
+}
+
+.inverse progress-bar {
+  height: 100%;
+  background-color: white;
+}
+
+.remark-inline-code{
+  background: #F5F5F5; /* lighter */
+  /* background: #e7e8e2; /* darker */
+  border-radius: 3px;
+  padding: 4px;
 }
 
 .title-slide {
@@ -202,7 +237,7 @@ hr {
   text-align: left;
   font-family: 'Arial Black','Helvetica';
   font-size: 24px;
-  margin-left: 50px;
+  margin-left: 70px;
 	
 }
 

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
   <head>
     <title>Titel</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="author" content="Thomas Muster   Institut" />
     <link rel="stylesheet" href="lib\zh_cd_city.css" type="text/css" />
+    <link rel="stylesheet" href="lib\hygge.css" type="text/css" />
     <link rel="stylesheet" href="https:\\cdnjs.cloudflare.com\ajax\libs\animate.css\3.7.0\animate.min.css" type="text/css" />
     <link rel="stylesheet" href="https:\\cdnjs.cloudflare.com\ajax\libs\font-awesome\4.7.0\css\font-awesome.min.css" type="text/css" />
   </head>
@@ -125,7 +126,7 @@ Mit der Anweisung `class: center, middle` werden alle Elemente der Folien _zentr
 Das Attribut `class` lässt weitere Positionierungsmöglichkeiten zu. Folgende Angaben sind möglich:
 
 Horizontal: `left, center, right` &lt;/br&gt;
-Vertikal: `top, middle, botton`
+Vertikal: `top, middle, bottom`
 
 ---
 background-image: url(lib/Hintergrundbild2.jpg)
@@ -193,29 +194,125 @@ https://www.pzhao.org/slides/xaringan-showcase/xaringan-animate/#5
 
 ---
 
-# Texthintergrund farblich markieren
+# Texthintergrund farblich markieren I
 ***
 
 Möglich mit `&lt;div style="background-color:#FFFFE0"&gt;Text&lt;/div&gt;`
 
-&lt;/br&gt;
 
 Hier ein paar Beispiele:
 
-&lt;div style="background-color:#DC143C"&gt;Text&lt;/div&gt;
+&lt;div style="background-color:#DC143C"&gt;Texthintergrund rot&lt;/div&gt;
 
-&lt;div style="background-color:#FF4500"&gt;Text&lt;/div&gt;
+&lt;div style="background-color:#FF4500"&gt;Texthintergrund orange&lt;/div&gt;
 
-&lt;div style="background-color:#FFFF00"&gt;.center[Text]&lt;/div&gt;
+&lt;div style="background-color:#FFFF00"&gt;.center[Texthintergrund gelb]&lt;/div&gt;
 
-&lt;div style="background-color:#228B22"&gt;.right[Text]&lt;/div&gt;
+&lt;div style="background-color:#228B22"&gt;.right[Texthintergrund grün]&lt;/div&gt;
 
-&lt;div style="background-color:#00BFFF"&gt;Text&lt;/div&gt;
+&lt;div style="background-color:#00BFFF"&gt;Texthintergrund blau&lt;/div&gt;
 
-&lt;/br&gt;
-Weitere Farben: &lt;/br&gt;
+Weitere Farben: 
 https://www.w3schools.com/cssref/css_colors.asp
 
+---
+
+# Texthintergrund farblich markieren II
+***
+
+Weitere Möglichkeiten:
+
+
+`.content-box-blue[Texthintergrund blau]` 
+
+.content-box-blue[Texthintergrund blau] 
+
+&lt;/br&gt;
+`.full-width[.content-box-red[Texthintergrund rot]]`
+.full-width[.content-box-red[Texthintergrund rot]] 
+.footnotesize[`.pull-left[.full-width[.content-box-yellow[Texthintergrund gelb, Box links]]]`] &lt;/br&gt;
+.footnotesize[`.pull-right[.full-width[.content-box-yellow[**Texthintergrund gelb, Box rechts, Text fett**]]]`]
+.pull-left[.full-width[.content-box-yellow[Texthintergrund gelb, Box links]]]
+.pull-right[.full-width[.content-box-yellow[**Texthintergrund gelb, Box rechts, Text fett.**]]]
+
+---
+
+# Texthintergrund farblich markieren III
+***
+
+.pull-left[
+**Syntax**
+
+`.full-width[.content-box-gray[Texthintergrund grau]]`
+
+`.full-width[.content-box-grey[Texthintergrund hellgrau]]`
+
+`.full-width[.content-box-orange[Texthintergrund orange]]`
+
+`.full-width[.content-box-green[Texthintergrund grün]]`
+
+`.full-width[.content-box-purple[ Texthintergrund lila]]`
+
+]
+
+.pull-right[
+**Ergebnis**
+
+.full-width[.content-box-gray[Texthintergrund grau]] 
+.full-width[.content-box-grey[Texthintergrund hellgrau]]
+.full-width[.content-box-orange[Texthintergrund orange]]
+.full-width[.content-box-green[Texthintergrund grün]]
+.full-width[.content-box-purple[ Texthintergrund lila]] 
+
+]
+
+---
+
+# Textfarben
+***
+
+
+.pull-left[
+**Syntax**
+
+`.black[Textfarbe schwarz]`
+
+`.gray[Textfarbe grau]`
+
+`.blue[Textfarbe blau]`
+
+`.green[Textfarbe grün]`
+
+`.purple[Textfarbe lila]`
+
+`.red[Textfarbe rot]`
+
+`.orange[Textfarbe orange]`
+
+`.yellow[Textfarbe gelb]`
+
+]
+
+.pull-right[
+**Ergebnis**
+
+.black[Textfarbe schwarz]
+
+.gray[Textfarbe grau]
+
+.blue[Textfarbe blau]
+
+.green[Textfarbe grün]
+
+.purple[Textfarbe lila]
+
+.red[Textfarbe rot]
+
+.orange[Textfarbe orange]
+
+.yellow[Textfarbe gelb]
+
+]
 ---
 
 # Überschriften
@@ -306,7 +403,7 @@ https://www.w3schools.com/cssref/css_colors.asp
 
 ---
 
-# Text formatieren
+# Text formatieren I
 ***
 
 
@@ -332,7 +429,7 @@ https://www.w3schools.com/cssref/css_colors.asp
 .pull-right[
 **Ergebnis**
 
-__Text fett__
+__Text fett__ 
 
 **Text fett**
 
@@ -340,7 +437,7 @@ _Text kursiv_
 
 *Text kursiv*
 
-~~Text durchstreichen~~
+~~Text durchgestrichen~~
 
 Text&lt;sub&gt;tiefgestellt&lt;/sub&gt;
 
@@ -357,44 +454,37 @@ Text&lt;sup&gt;hochgestellt&lt;/sup&gt;
 .pull-left[
 **Syntax**
 
-`.smaller[Klein.] `
-
-`.smallest[Kleiner.]`
-
-`.small[Am kleinsten.]`
-
-`Normal`
-
-`.largest[Gross.] `
-
-`.larger[Grösser.] `
-
-`.large[Am grössten.]`
+`.smaller[Klein]`
+`.smaller[Klein]/.smallest[Klein]`
+`.small[Kleiner]`
+`.footnotesize[Kleiner]`&lt;/br&gt;
+`.scriptsize[scriptsize]`&lt;/br&gt;
+`.tiny[Am kleinsten]`&lt;/br&gt;
+`Normal` 
+`.largest[Gross]/.larger[Gross]`&lt;/br&gt;
+`.large[Grösser]`&lt;/br&gt;
+`.Large[Am grössten]`&lt;/br&gt;
 
 ]
 
 .pull-right[
 **Ergebnis**
 
-.smaller[Klein.] 
-
-.smallest[Kleiner.]  
-
-.small[Am kleinsten.] 
-
-Normal  
-
-.largest[Gross.] 
-
-.larger[Grösser.]   
-
-.large[Am grössten.] 
+.smaller[Klein]/.smallest[Klein] &lt;/br&gt;
+.small[Kleiner] &lt;/br&gt;
+.footnotesize[Kleiner] &lt;/br&gt;
+.scriptsize[scriptsize] &lt;/br&gt;
+.tiny[Am kleinsten] &lt;/br&gt;
+Normal   
+.largest[Gross]/.larger[Gross] &lt;/br&gt;
+.large[Grösser] &lt;/br&gt;
+.Large[Am grössten] &lt;/br&gt;
 
 ]
 
 ---
 
-# Auch schön
+# Auch schön zu wissen
 ***
 
 
@@ -407,16 +497,26 @@ Normal
 
 ` `Eine andere Schriftart.` `
 
+`.bolder[Text fett]`
+
+`.bold[Text fetter]` 
+
 ]
 
 .pull-right[
-**Beispiel**
+**Ergebnis**
 
 Ein [Link](https://statistik.zh.ch/internet/justiz_inneres/statistik/de/home.html).
 
 &gt; Ein Zitat.
 
 `Eine andere Schriftart.`
+
+.bolder[Text fett]
+
+.bold[Text fetter] 
+
+
 
 &lt;/div&gt;
 ]
@@ -617,19 +717,93 @@ ggplot(mtcars) +
 
 ---
 
-# Bild einfügen
+# Bilder einfügen I
 ***
 
-Bilder lassen sich mit `![](L:/STAT/.../bild.png)` einfügen. Einfach den Dateipfand oder den Link zum Bild an entsprechender Stelle einfügen.
+Um Bilder einzufügen, bestehen beispielsweise die folgenden beiden Möglichkeiten:
+
+`![](L:/STAT/.../bild.png)`  
+
+
+```r
+knitr::include_graphics("HierInternetlinkoderDateipfadeinfügen.jpg")
+```
 
 .center[![Bild](https://raw.githubusercontent.com/libgit2/libgit2sharp/master/square-logo.png)]
 
+Die letzte hier angegebene Funktion erlaubt etwa die folgenden Outputs: 
+
 ---
 
-# Theme
+# Bilder einfügen II
 ***
 
-Um ein anderes Theme zu wählen, kannst du im Header nach `css` den Dateinamen deiner gewünschten CSS-Datei einsetzen. In etwa so:
+.pull-left[
+Original:
+
+&lt;img src="https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg" width="50%" /&gt;
+
+Mit `.polaroid`:
+
+.polaroid[
+&lt;img src="https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg" width="50%" /&gt;
+]
+]
+
+.pull-right[
+
+Mit `.rotate-right`:
+
+.rotate-right[
+&lt;img src="https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg" width="50%" /&gt;
+]
+
+Mit `.blur`
+
+.blur[
+&lt;img src="https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg" width="50%" /&gt;
+] 
+]
+
+---
+
+# Bilder einfügen III
+***
+
+.pull-left[
+Mit `.opacity`
+
+.opacity[
+&lt;img src="https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg" width="50%" /&gt;
+]
+
+Mit `.blur` und `.opacity`
+
+.blur[.opacity[
+&lt;img src="https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg" width="50%" /&gt;
+]]
+]
+.pull-right[
+
+Mit `.rotate-left` und `.grayscale`:
+
+.rotate-left[
+.grayscale[
+&lt;img src="https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg" width="50%" /&gt;
+]]
+
+Mit `.shadow`:
+
+.shadow[
+&lt;img src="https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Switzerland-Zurich-473814924-RudyBalasko-copy-1024x585.jpg" width="50%" /&gt;
+] 
+]
+---
+
+# Themes I
+***
+
+Um ein anderes Theme zu wählen, kann im Header nach `css` der Dateiname einer gewünschten CSS-Datei eingesetzt werden. In etwa so:
 
 ```yaml
 output:
@@ -641,6 +815,20 @@ output:
 ```
 
 Der letzte hier angegebene Link ermöglicht übrigens das Einfügen von Icons, zum Beispiel einen Twitter-Icon.
+
+---
+
+# Themes II
+***
+
+In dieser Package sind die CSS-Dateien `zh_cd_city.css` und `zh_cd_white.css` enthalten, mit dem Unterschied, dass jeweils eine andere Titelfolie verwendet wird.
+
+Ein paar weitere Themes sind zum Beispiel hier zu finden: &lt;/br&gt;
+https://github.com/yihui/xaringan/wiki/Themes 
+
+Einige lassen sich auch mit dem Befehl `names(xaringan:::list_css())` anzeigen.
+
+Mit dem Befehl `?xaringan::moon_reader` kann ein nützliches Hilfedokument abgerufen werden.
 
 ---
 
@@ -665,38 +853,127 @@ background-size: cover
 ```
 
 ---
+
+# Importieren von Microsoft Powerpoint
+***
+
+Siehe hier: &lt;/br&gt;
+https://github.com/yihui/xaringan/wiki/Importing-from-Microsoft-PowerPoint
+
+---
+
+# Exportieren als PDF
+***
+
+Siehe hier: &lt;/br&gt;
+https://github.com/yihui/xaringan/wiki/Export-Slides-to-PDF
+
+
+---
 background-image: url(lib/Hintergrundbild2.jpg)
 class: center, middle, inverse
 
-# Danke fürs Durchhalten!
+
+# Feedback? Immer gerne!
 ***
-.center[&lt;div style="
+.center[
+&lt;div style="
 font-size:120px;
 margin: 90px;
 "&gt;
-&amp;#128540;
-&lt;/div&gt;]
+&amp;#128519;
+&lt;/div&gt;
+]
+
+&lt;div  style="
+position: absolute;
+bottom: 30px;
+left: 390px;
+margin-top: 50px;
+"&gt;
+&lt;font face="Brush Script MT" size="5"&gt;Presentation created "with .content-box-yellow[[xaringan](https://github.com/yihui/xaringan)] and a twist of .content-box-yellow[[hygge](https://github.com/yihui/xaringan/blob/master/inst/examples/ghoul.Rmd)]"&lt;/font&gt;
+&lt;/div&gt;
     </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
 "highlightLines": true,
 "countIncrementalSlides": false,
-"ratio": "16:9"
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">   <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">   </div> </div>` "
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
-(function() {
-  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
   if (!r) return;
   s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
   d.head.appendChild(s);
-})();</script>
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
 
 <script>
 (function() {
-  var i, text, code, codes = document.getElementsByTagName('code');
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
   for (i = 0; i < codes.length;) {
     code = codes[i];
     if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
@@ -710,14 +987,15 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     i++;
   }
-})();
+};
+slideshow._releaseMath(document);
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
 (function () {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
   if (location.protocol !== 'file:' && /^https?:/.test(script.src))
     script.src  = script.src.replace(/^https?:/, '');
   document.getElementsByTagName('head')[0].appendChild(script);
