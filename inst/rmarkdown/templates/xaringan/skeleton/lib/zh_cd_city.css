@@ -232,7 +232,7 @@ hr {
 /* title slide : formattierung der github / twitter / email angaben */
 .contact{
    text-align: left;
-   margin-left: 70px;
+   margin-left: 50px;
 } 
 
 .contact a{
@@ -244,6 +244,20 @@ hr {
 }
 
 .contact a:hover {
+  color: orange;
+}
+
+/*links auf blauen folien mit Klasse .inverse*/
+
+
+.inverse a{
+  color: white;
+  text-decoration: none; 
+  border-bottom: 5px solid #009ee0; 
+  color: white;
+}
+
+.inverse a:hover {
   color: orange;
 }
 
